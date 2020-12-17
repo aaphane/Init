@@ -1,5 +1,0 @@
-#they all listen all available networks
-
-ifconfig -a | sed 's/[ \t].*//;/^$/d'
-ip -o link show | awk -F': ' '{print $2}'
-ls /sys/class/net
